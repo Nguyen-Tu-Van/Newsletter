@@ -1,0 +1,521 @@
+*{
+  margin:0; padding:0;
+  transition:all 0.3s;
+  font-family: sans-serif;
+}
+
+html{
+  font-size: 65%;
+}
+
+.heading{
+  font-size: 4rem;
+  text-align: center;
+  color:gray;
+  margin:2rem 0;
+  padding-top: 6rem;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-color: red;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width:100%;
+  background:white;
+  padding:1rem;
+  border-bottom: 1px solid lightgrey;
+}
+
+.header .logo img{
+  height: 4rem;
+}
+
+.header nav ul{
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin:0; padding:0;
+}
+
+.header nav ul li{
+  margin: 0 1rem;
+}
+
+.header nav ul li a{
+  font-size: 2rem;
+  color:gray;
+}
+
+.header nav ul li a:hover{
+  color:black;
+  text-decoration: none;
+}
+
+.header .fa-bars{
+  font-size: 2.5rem;
+  color:gray;
+  cursor: pointer;
+  display: none;
+}
+
+.home .hero{
+  min-height: 50rem;
+  background: url(images/a4.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.home .row{
+  padding: 0;
+  margin:0;
+}
+
+.home .hero .text1{
+  background:green;
+  color:white;
+  font-size: 5rem;
+  width:43rem;
+  padding:1rem;
+  text-align: center;
+  opacity: .8;
+}
+
+.home .hero .text2{
+  background:red;
+  color: white;
+  font-size: 3rem;
+  width:35rem;
+  padding:1rem;
+  text-align: center;
+  opacity: .8;
+  margin-top: 1rem;
+}
+
+.home .counting{
+  background-color: black;
+  min-height: 15em;
+  padding: 1em 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home .counting .box{
+  margin: 2rem 4rem;
+  text-align: center;
+}
+
+.home .counting .box .count{
+  color:yellow;
+}
+
+.home .counting .box h1{
+  font-size: 4rem;
+  color: cyan;
+}
+
+.home .counting .box h3{
+  font-size: 2rem;
+  color:gray;
+}
+
+.about{
+  min-height: 10rem;
+  padding-bottom: 3rem;
+}
+
+.about .image{
+  padding:2rem;
+}
+
+.about .image img{
+  height:45rem;
+  box-shadow: 2rem 2rem 0.1rem 0.1rem orange;
+}
+
+.about .info{
+  padding:2rem;
+  margin-top: 3rem;
+}
+
+.about .info h2{
+  color:orange;
+  font-size: 3rem;
+}
+
+.about .info p{
+  font-size: 1.4rem;
+  color:gray;
+  margin:2rem 0;
+}
+
+.about .info .icons a{
+  font-size: 2rem;
+  height: 4rem;
+  width:4rem;
+  line-height: 4rem;
+  text-align: center;
+  background:black;
+  color:white;
+  border-radius: .5rem;
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+.about .info .icons a:hover{
+  background:cyan;
+  color: black;
+}
+
+.service{
+  min-height: 60rem;
+}
+
+.service .box-container{
+  width:90%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.service .box-container .box{
+  height:25rem;
+  width:25rem;
+  border-left: .5rem solid black;
+  border-right: .5rem solid orange;
+  border-top: .5rem solid black;
+  border-bottom: .5rem solid orange;
+  border-radius: .5rem;
+  text-align: center;
+  padding-top: 6rem;
+  margin:2rem 3rem;
+}
+
+.service .box-container .box .fas{
+  color:orange ;
+  font-size: 5rem;
+}
+
+.service .box-container .box p{
+  color:black;
+  font-size: 1.5rem;
+  margin:2rem 0;
+}
+
+.project{
+  min-height:60rem;
+  background:black;
+}
+
+.project .heading{
+  color:white;
+}
+
+.project .box-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project .box-container .box{
+  height:20rem;
+  width:30rem;
+  border-radius: .5rem;
+  margin:2rem;
+  overflow: hidden;
+  box-shadow: 0 .3rem .5rem black;
+}
+
+.project .box-container .box img{
+  height:100%;
+  width:100%;
+}
+
+.project .box-container .box:hover img{
+  transform: scale(1.2);
+}
+
+
+.contact{
+  min-height: 65rem;
+}
+
+.contact-box-container{
+  width:90%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact-box-container .contact-box{
+  height:15rem;
+  flex:1 0 30rem;
+  margin:2rem;
+  box-shadow: 0.5rem 0.5rem 1rem 1rem;
+  border-radius: .5rem;
+  text-align: center;
+  padding-top: 4rem;
+}
+
+.contact-box-container .contact-box i{
+  color:yellow;
+  font-size: 4rem;
+}
+
+.contact-box-container .contact-box h3{
+  font-size: 1.8rem;
+  color:gray;
+  margin:2rem 0;
+}
+
+.contact .form-container{
+  width:90%;
+  box-shadow: 1rem 1rem 1rem 1rem;
+  border-radius: .5rem;
+  padding:1rem 3rem;
+  margin-bottom: 2rem;
+}
+
+.contact .form-container form input, textarea{
+  height:4.5rem;
+  padding:0 1rem;
+  margin:2rem 0;
+  font-size: 1.5rem;
+  box-shadow: 0.3rem 0.3rem 0.5rem 0.5rem;
+  border:none;
+  outline: none;
+  color:black;
+}
+
+.contact .form-container form .inputBox{
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact .form-container form input[type="text"]{
+  width:49%;
+}
+
+.contact .form-container form input[type="email"]{
+  width:100%;
+}
+
+.contact .form-container form textarea{
+  width:100%;
+  height:20rem;
+  padding:1rem;
+  overflow-y: auto;
+}
+
+.contact .form-container form input[type="submit"]{
+  background:orange;
+  width:15rem;
+  color:white;
+  font-size: 2rem;
+}
+
+.contact .form-container form input[type="submit"]:hover{
+  opacity:0.9;
+  background-color: red;
+}
+
+.footer{
+  background:black;
+  text-align: center;
+}
+
+.footer .row{
+  width:100%;
+  padding: 2em;
+}
+
+.footer h2{
+  font-size: 2.5rem;
+  color:darkturquoise;
+}
+
+.footer p{
+  font-size: 1.2rem;
+  color:gray;
+}
+
+.footer .list{
+  display: flex;
+  flex-flow: column;
+}
+
+.footer .list a{
+  color:white;
+  font-size: 1.6rem;
+}
+
+.footer .letter p{
+  font-size: 2rem;
+}
+
+.footer .letter input[type="email"]{
+  padding:1rem;
+  height:4rem;
+  width:100%;
+  border-top-left-radius: 5em;
+  border-top-right-radius:  5em;
+  border-bottom-right-radius:  5em;
+  border-bottom-left-radius:  5em;
+  border:.1rem solid black;
+  font-size: 1.5rem;
+}
+
+.footer .letter input[type="submit"]{
+  outline: none;
+  border: none;
+  background:cyan;
+  margin:1rem;
+  width:10rem;
+  font-size: 1.6rem;
+}
+
+.footer .letter input[type="submit"]:hover{
+  background:orange;
+  color:white;
+}
+
+.footer .company{
+  width: 100%;
+  text-align: center;
+  color:yellow;
+  font-size: 2rem;
+  padding:2rem;
+  border-top: 0.1rem solid white;
+}
+
+/*media*/
+@media (max-width:768px){
+
+  html{
+    font-size: 50%;
+  }
+
+  .header .fa-bars{
+    display: block;
+  }
+
+  .header nav{
+    position: fixed;
+    top:6rem; right: -120%;
+    height:calc(100vh - 6rem);
+    width:100vw;
+    z-index: 1000;
+    border-top: .1rem solid black;
+  }
+  .header nav ul{
+    height: 100%;
+    width:33rem;
+    background:white;
+    flex-flow: column;
+    justify-content: center;
+    float: right;
+  }
+  .header nav ul li{
+    margin:1rem 0;
+  }
+
+  .header nav ul li a{
+    display: block;
+    padding:.5rem 0;
+    border: .1rem solid black;
+    width:25rem;
+    border-radius: 5rem;
+    text-align: center;
+  }
+
+  .header nav ul li a:hover{
+    background:brown;
+    color:white;
+  }
+
+  .header .nav-toggle{
+    right: 0%;
+  }
+  .home .counting .box h1{
+  font-size: 3.5rem;
+  }
+
+  .home .counting .box h3{
+    font-size: 2rem;
+  }
+
+}
+
+@media (max-width:425px){
+  .home .hero .text1{
+    font-size: 3.5rem;
+    width: 33rem;
+  }
+  .home .hero .text2{
+    font-size: 2.5rem;
+    width: 30rem;
+  }
+  .home .counting .box h1{
+  font-size: 2.6rem;
+  }
+
+  .home .counting .box h3{
+    font-size: 1.5rem;
+  }
+}
+
+/* button */
+#myBtn {
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 0;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: gray;
+}
+
+.btn{
+  min-width:9rem;
+}
+
+.bt{
+  font-weight: bold;
+  background-color: orange;
+  color:black !important;
+}
+
+.bt1{
+  background-color: black;
+  color:white !important;
+}
+
+.btn:hover{
+  background-color: brown;
+  color:yellow !important;
+}
+
+#mc_embed_signup{
+  padding: 1rem;
+  background-color: white;
+  font-size: 2rem;
+  color:black;
+}
