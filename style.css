@@ -505,6 +505,8 @@ html{
   background-color: pink;
 }
 #mc_embed_signup{
+  padding: 1rem;
+  background-color: white;
   font-size: 2rem;
-  color: white;
+  color:black;
 }

@@ -65,7 +65,7 @@ function signup()
 function checkMail()
 {
   let email=document.forms["sign"].email.value;
-  let regemail = /^([a-zA-Z0-9_\.\-])+\@gmail.com+$/;
+  let regemail = /^([a-zA-Z0-9\.\-])+\@gmail.com+$/;
    if(!regemail.test(email))
   {
    alert("Email không hợp lệ.\n abc@gmail.com");
