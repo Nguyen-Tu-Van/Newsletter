@@ -43,7 +43,7 @@ html{
 }
 
 .header nav ul li{
-  margin: 0 1.5rem;
+  margin: 0 1rem;
 }
 
 .header nav ul li a{
@@ -496,13 +496,21 @@ html{
 #myBtn:hover {
   background-color: #555;
 }
+.btn{
+  min-width:9rem;
+}
 .bt{
   font-weight: bold;
   background-color: orange;
-  color:white;
+  color:black !important;
 }
-.bt:hover{
-  background-color: pink;
+.bt1{
+  background-color: black;
+  color:white !important;
+}
+.btn:hover{
+  background-color: brown;
+  color:yellow !important;
 }
 #mc_embed_signup{
   padding: 1rem;
