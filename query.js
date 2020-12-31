@@ -64,14 +64,12 @@ function signup()
 //check mail validate
 function checkMail()
 {
-  let email=document.forms["sign"].email.value;
+  let email=document.forms["mc-embedded-subscribe-form"].EMAIL.value;
   let regemail = /^([a-zA-Z0-9\.\-])+\@gmail.com+$/;
    if(!regemail.test(email))
   {
    alert("Email không hợp lệ.\n abc@gmail.com");
-   document.forms["sign"].email.focus();
+   document.forms["mc-embedded-subscribe-form"].EMAIL.focus();
    return false;
   }
-  alert("You have successfully registered !")
-  return true;
 }
